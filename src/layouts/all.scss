@@ -1,5 +1,4 @@
 @import "~bulma/sass/utilities/initial-variables";
-@import "values/color";
 
 // Config vars
 $kaldi-red: #FD461E;
@@ -45,3 +44,4 @@ $primary-invert: $kaldi-red-invert;
 }
 
 @import "~bulma";
+@import "values/color";
