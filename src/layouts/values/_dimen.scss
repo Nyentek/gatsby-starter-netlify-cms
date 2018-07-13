@@ -1,0 +1,66 @@
+//Contstants
+$φ: 1.61803398875;
+$√2:1.41421356237;
+$δ: 4.66920160910;
+
+//Base Units
+$xxs:   0.125rem; // 2px
+$xs:    0.250rem; // 4px
+$sm:    0.500rem; // 8px
+$md:    0.750rem; //12px
+$lg:    1.000rem; //16px
+$xl:    1.500rem; //24px
+$xxl:   2.000rem; //32px
+
+//Opacities
+$opacity-min: 0.02;
+$opacity-eighth: 0.16;
+$opacity-quarter: 0.25;
+$opacity-third: 0.33;
+$opacity-half: 0.52;
+$opacity-mid: 0.72;
+$opacity-high: 0.84;
+$opacity-max: 0.96;
+
+//Animation Durations
+$duration-short: 96ms;
+$duration-med: 248ms;
+$duration-long: 512ms;
+
+//Font Sizes
+$font-size-title: 4rem;
+$font-size-heading: 2.25rem;
+$font-size-subheading: 1.75rem;
+$font-size-copy: 1.25rem;
+$font-size-caption: 1rem;
+$font-size-button: 1.25rem;
+
+//Breakpoints
+$mobile-max:    480px;
+$phablet-min:   $mobile-max + 1px;
+$phablet-max:   768px;
+$tablet-min:    $phablet-max + 1px;
+$tablet-max:    1080px;
+$laptop-min:    $tablet-max + 1px;
+$laptop-max:    1920px;
+$desktop-min:   $laptop-max + 1px;
+
+//Device Ranges
+$mobile:    "(max-width: #{$mobile-max})";
+$phablet:   "(min-width: #{$phablet-min}) and (max-width: #{$phablet-max})";
+$tablet:    "(min-width: #{$tablet-min}) and (max-width: #{$tablet-max})";
+$laptop:    "(min-width: #{$laptop-min}) and (max-width: #{$laptop-max})";
+$desktop:   "(min-width: #{$desktop-min})";
+
+$phablet-up:    "(min-width: #{$phablet-min})";
+$tablet-up:     "(min-width: #{$tablet-min})";
+$laptop-up:     "(min-width: #{$laptop-min})";
+
+$phablet-down:  "(max-width: #{$phablet-max})";
+$tablet-down:   "(max-width: #{$tablet-max})";
+$laptop-down:   "(max-width: #{$laptop-max})";
+
+//Element Sizes
+$header-height-full: 92px;
+$header-height-offset: 8px;
+$dbh: 2 * $header-height-full;
