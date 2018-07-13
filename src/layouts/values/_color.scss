@@ -1,0 +1,66 @@
+//Brand
+$cyan:    #00ADEF;
+$cyan300: #1BA3E3;
+$cyan500: #198DD1;
+$cyan700: #177AC0;
+$cyan900: #1761AC;
+
+$magenta:    #EC008B;
+$magenta300: #D9178A;
+$magenta500: #B81787;
+$magenta700: #991884;
+$magenta900: #751B81;
+
+$indigo:    #19227D;
+$indigo300: #181779;
+$indigo500: #13146D;
+$indigo700: #0F1061;
+$indigo900: #0C0E55;
+
+$brand-primary: $indigo !default;
+$brand-secondary: $cyan !default;
+$brand-accent: $magenta !default;
+
+$gray050: #ECEFF1;
+$gray100: #CFD8DC;
+$gray200: #B0BEC5;
+$gray300: #90A4AE;
+$gray400: #78909C;
+$gray500: #607D8B;
+$gray600: #546E7A;
+$gray700: #455A64;
+$gray800: #37474F;
+$gray900: #263238;
+
+$white: #FAFEFF;
+$gray: $gray050;
+
+//UI
+$window-background: #F1F8FE;
+$element-background: $white;
+
+$scrim-start: rgba($white, 1);
+$scrim-mid: rgba($white, $opacity-half);
+$scrim-end: rgba($white, 0);
+
+//Text
+$text-primary-dark: rgba($indigo900,$opacity-mid);
+$text-secondary-dark: rgba($indigo700, $opacity-half);
+$text-tertiary-dark: rgba($indigo500, $opacity-third);
+
+$text-primary-light: rgba($white, $opacity-max);
+$text-secondary-light: rgba($white, $opacity-mid);
+$text-tertiary-light: rgba($white, $opacity-half);
+
+//Client Brands
+$az-black:      #221F1F;
+$az-red:        #BE2F37;
+$az-yellow:     #FFD31E;
+$az-green:      #229146;
+$intel-blue:    #0071C5;
+$pandora-blue:  #00A0EE;
+$poc-magenta:   #A02C4A;
+$poc-black:     #000000;
+$poc-white:     #FFFFFF;
+$st-primary:    #008996;
+$st-secondary:  #82BC00;
