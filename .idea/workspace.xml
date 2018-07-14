@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="80545367-8eb5-4465-89ad-9c8e7fbeb677" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/src/layouts/all.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/layouts/all.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/layouts/partials/_header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/layouts/partials/_header.scss" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -40,11 +41,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="all.scss" pinned="false" current-in-tab="false">
+      <file leaf-file-name="all.scss" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/layouts/all.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+            <state relative-caret-position="511">
+              <caret line="128" lean-forward="true" selection-start-line="128" selection-end-line="128" />
             </state>
           </provider>
         </entry>
@@ -58,11 +59,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_header.scss" pinned="false" current-in-tab="true">
+      <file leaf-file-name="_header.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/layouts/partials/_header.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="480">
-              <caret line="119" column="21" selection-start-line="119" selection-start-column="21" selection-end-line="119" selection-end-column="21" />
+            <state relative-caret-position="429">
+              <caret line="116" column="3" lean-forward="true" selection-start-column="2" selection-end-line="116" selection-end-column="3" />
             </state>
           </provider>
         </entry>
@@ -110,8 +111,8 @@
         <option value="$PROJECT_DIR$/src/layouts/values/_dimen.scss" />
         <option value="$PROJECT_DIR$/src/components/Navbar.js" />
         <option value="$PROJECT_DIR$/src/components/Logo.js" />
-        <option value="$PROJECT_DIR$/src/layouts/all.scss" />
         <option value="$PROJECT_DIR$/src/layouts/partials/_header.scss" />
+        <option value="$PROJECT_DIR$/src/layouts/all.scss" />
       </list>
     </option>
   </component>
@@ -234,7 +235,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3712000" />
+    <option name="totallyTimeSpent" value="3880000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-5" y="0" width="971" height="1046" extended-state="0" />
@@ -555,13 +556,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/layouts/all.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/layouts/values/_dimen.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="181">
@@ -588,8 +582,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/layouts/partials/_header.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="119" column="21" selection-start-line="119" selection-start-column="21" selection-end-line="119" selection-end-column="21" />
+        <state relative-caret-position="429">
+          <caret line="116" column="3" lean-forward="true" selection-start-column="2" selection-end-line="116" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/layouts/all.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="511">
+          <caret line="128" lean-forward="true" selection-start-line="128" selection-end-line="128" />
         </state>
       </provider>
     </entry>

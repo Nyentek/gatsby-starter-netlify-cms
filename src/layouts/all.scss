@@ -9,6 +9,124 @@ $kaldi-red-invert: #fff;
 $primary: $kaldi-red;
 $primary-invert: $kaldi-red-invert;
 
+%header-base {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 999;
+	display: flex;
+	flex-flow: row nowrap;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0 $xl;
+	height: $header-height-full - $header-height-offset;
+	padding-bottom: $header-height-offset;
+	background: transparent;
+	&::after {
+		content: " ";
+		position: absolute;
+		z-index: 0;
+		right: 0;
+		left: 0;
+		bottom: -$lg;
+		display: block;
+		height: $lg;
+		background: linear-gradient(
+						to bottom,
+						rgba($indigo900, $opacity-high) 0%,
+						rgba($indigo900, $opacity-third) 1.25%,
+						rgba($indigo900, $opacity-eighth) 33%,
+						rgba($indigo900, 0) 100%
+		);
+	}
+	//&.header-hidden {
+	//	top: calc((#{$header-height-full} + #{$lg}) * -1);
+	//	transition: top $duration-long ease-in-out $duration-long;
+	//
+	//}
+	//transition: top $duration-long ease-in-out $duration-short;
+}
+
+#header-site {
+	@extend %header-base;
+	&::after {
+		opacity: 0;
+		transition: opacity $duration-short;
+	}
+	&.lower {
+		background: $brand-primary !important;
+		.icon-top {
+			fill: $brand-accent;
+		}
+		.icon-bottom {
+			fill: $brand-secondary;
+		}
+		&::after {
+			opacity: 1;
+			transition: opacity $duration-long ease-in-out $duration-med;
+		}
+	}
+}
+
+#header-global {
+	@extend %header-base;
+	background: $brand-primary;
+	.icon-top {
+		fill: $brand-accent;
+	}
+	.icon-bottom {
+		fill: $brand-secondary;
+	}
+}
+
+.motif-element-cyan {
+	fill: $cyan;
+}
+
+.motif-element-magenta {
+	fill: $magenta;
+}
+
+.motif-element-indigo {
+	fill: $indigo;
+}
+
+.header-logo {
+	border: 0;
+	outline: 0;
+	background: transparent;
+	max-width: 22.5%;
+	.combination-mark {
+		fill: $text-primary-light;
+		height: 40px;
+		max-width: 100%;
+		min-width: 128px;
+	}
+	.icon-top, .icon-bottom {
+		transition: fill $duration-long ease-in-out, transform $duration-short ease-in-out;
+	}
+	&:active {
+		.icon-top {
+			transform: translate(7px, 57px);
+		}
+		.icon-bottom {
+			transform: translate(-7px, -57px);
+		}
+	}
+}
+
+@each $link, $icon in (
+		'nav-studies': 'work',
+		'nav-story': 'chrome_reader_mode',
+		'nav-contact': 'sms'
+) {
+	##{$link}::before {
+		@extend .material-icons;
+		content: '#{$icon}';
+	}
+}
+
 .content .taglist {
 	list-style: none;
 	margin-bottom: 0;
