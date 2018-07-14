@@ -1,4 +1,7 @@
 @import "~bulma/sass/utilities/initial-variables";
+@import "values/dimen";
+@import "values/color";
+@import "partials/header";
 
 // Config vars
 $kaldi-red: #FD461E;
@@ -13,6 +16,7 @@ $primary-invert: $kaldi-red-invert;
 	margin-left: 0;
 	margin-right: 1.5rem;
 	margin-top: 1.5rem;
+	text-decoration: underline;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: left;
@@ -42,8 +46,4 @@ $primary-invert: $kaldi-red-invert;
 .margin-top-0 {
 	margin-top: 0 !important;
 }
-
-@import "values/dimen";
-@import "values/color";
-@import "partials/header";
 @import "~bulma";
