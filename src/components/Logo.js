@@ -1,3 +1,5 @@
+import React from 'react'
+
 export const Logo = () => (
   <svg className="combination-mark" version="1.1" baseProfile="full"
        xmlns="http://www.w3.org/2000/svg" role="img" width="180"
