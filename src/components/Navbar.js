@@ -15,7 +15,7 @@ const Navbar = () => (
           <a href="https://nyentekmaster.netlify.com/projects" id="nav-studies">Featured Projects</a>
         </li>
         <li className="navigation-options-item">
-          <a href="https://nyentekmaster.netlify.com" id="nav-contact">Contact Us</a>
+          <a href="https://nyentekmaster.netlify.com/#contact-section-form" id="nav-contact">Contact Us</a>
         </li>
       </ul>
     </nav>
