@@ -11,7 +11,8 @@ export default class IndexPage extends React.Component {
 			<section className="section">
 				<div className="global-splash">
 					<div className="splash-content">
-						<h1>Nyentek Blog</h1>
+						<h1 className="splash-heading">Nyentek Blog</h1>
+						<p className="splash-subheading">Blah Blah Blah</p>
 					</div>
 				</div>
 				<div className="container">
