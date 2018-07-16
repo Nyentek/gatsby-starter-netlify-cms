@@ -1,11 +1,11 @@
 import React from "react";
-import { Logo } from "Logo.js";
+import { Logo } from "./Logo.js";
 import Link from "gatsby-link";
 
 
 const Navbar = () => (
   <header id="header-global">
-    <Logo/>
+      <Logo/>
     <button type="button" id="overflow-menu-trigger" title="Open Navigation Menu">
       <i className="material-icons">view_list</i>
       <span className="screen-reader-text">Open Navigation Menu</span>
