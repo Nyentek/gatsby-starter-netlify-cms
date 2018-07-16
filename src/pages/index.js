@@ -7,6 +7,8 @@ export default class IndexPage extends React.Component {
 		const { data } = this.props
 		const { edges: posts } = data.allMarkdownRemark
 
+		console.log(posts)
+
 		return (
 			<section>
 				<div className="global-splash">
@@ -22,7 +24,6 @@ export default class IndexPage extends React.Component {
 					{posts
 						.map(({ node: post }) => (
 							<div
-								{console.log(post)}
 								className="content card"
 								style={{ border: '1px solid #eaecee', padding: '2em 4em' }}
 								key={post.id}
