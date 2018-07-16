@@ -8,7 +8,7 @@ export default class IndexPage extends React.Component {
 		const { edges: posts } = data.allMarkdownRemark
 
 		return (
-			<section className="section">
+			<section>
 				<div className="global-splash">
 					<div className="splash-content">
 						<h1 className="splash-heading">Nyentek Blog</h1>
