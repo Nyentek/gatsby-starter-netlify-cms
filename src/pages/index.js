@@ -1,23 +1,31 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import Link from 'gatsby-link'
+import React from "react";
+import PropTypes from "prop-types";
+import Link from "gatsby-link";
 
 export default class IndexPage extends React.Component {
-  render() {
-    const { data } = this.props
-    const { edges: posts } = data.allMarkdownRemark
+  render () {
+    const { data } = this.props;
+    const { edges: posts } = data.allMarkdownRemark;
 
     return (
       <section className="section">
         <div className="container">
+          <div className="global-splash">
+            <div className="splash-content">
+              <h1 className="splash-heading">You Invent.<br/>We Engineer.</h1>
+              <p className="splash-subheading">We build complete web, mobile, and <abbr
+                title="Internet of Things">IoT</abbr> solutions for medical, industrial, and
+                consumer device companies.</p>
+            </div>
+          </div>
           <div className="content">
             <h1 className="has-text-weight-bold is-size-2">Latest Stories</h1>
           </div>
           {posts
             .map(({ node: post }) => (
               <div
-                className="content"
-                style={{ border: '1px solid #eaecee', padding: '2em 4em' }}
+                className="content card"
+                style={{ border: "1px solid #eaecee", padding: "2em 4em" }}
                 key={post.id}
               >
                 <p>
@@ -29,8 +37,8 @@ export default class IndexPage extends React.Component {
                 </p>
                 <p>
                   {post.excerpt}
-                  <br />
-                  <br />
+                  <br/>
+                  <br/>
                   <Link className="button is-small" to={post.fields.slug}>
                     Keep Reading →
                   </Link>
@@ -39,17 +47,17 @@ export default class IndexPage extends React.Component {
             ))}
         </div>
       </section>
-    )
+    );
   }
 }
 
 IndexPage.propTypes = {
   data: PropTypes.shape({
     allMarkdownRemark: PropTypes.shape({
-      edges: PropTypes.array,
-    }),
-  }),
-}
+      edges: PropTypes.array
+    })
+  })
+};
 
 export const pageQuery = graphql`
   query IndexQuery {
@@ -73,4 +81,4 @@ export const pageQuery = graphql`
       }
     }
   }
-`
+`;
