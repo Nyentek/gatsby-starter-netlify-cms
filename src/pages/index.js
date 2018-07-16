@@ -12,10 +12,8 @@ export default class IndexPage extends React.Component {
         <div className="container">
           <div className="global-splash">
             <div className="splash-content">
-              <h1 className="splash-heading">You Invent.<br/>We Engineer.</h1>
-              <p className="splash-subheading">We build complete web, mobile, and <abbr
-                title="Internet of Things">IoT</abbr> solutions for medical, industrial, and
-                consumer device companies.</p>
+              <h1 className="splash-heading">Nyentek Blog</h1>
+              <p className="splash-subheading">Blah Blah Blah</p>
             </div>
           </div>
           <div className="content">
