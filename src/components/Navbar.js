@@ -16,9 +16,6 @@ const Navbar = () => (
         <li className="navigation-options-item">
           <a href="#" id="nav-studies">Featured Projects</a>
         </li>
-        <!--<li class="navigation-options-item">-->
-        <!--<a href="story.html" id="story">Our Story</a>-->
-        <!--</li>-->
         <li className="navigation-options-item">
           <button id="nav-contact">Contact Us</button>
         </li>
