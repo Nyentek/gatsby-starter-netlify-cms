@@ -1,7 +1,5 @@
 import React from "react";
 import { Logo } from "./Logo.js";
-import Link from "gatsby-link";
-
 
 const Navbar = () => (
   <header id="header-global">
@@ -14,10 +12,10 @@ const Navbar = () => (
       <h2 className="screen-reader-text">Site Navigation</h2>
       <ul className="navigation-options">
         <li className="navigation-options-item">
-          <a href="#" id="nav-studies">Featured Projects</a>
+          <a href="https://nyentekmaster.netlify.com/projects" id="nav-studies">Featured Projects</a>
         </li>
         <li className="navigation-options-item">
-          <button id="nav-contact">Contact Us</button>
+          <a href="https://nyentekmaster.netlify.com" id="nav-contact">Contact Us</a>
         </li>
       </ul>
     </nav>
