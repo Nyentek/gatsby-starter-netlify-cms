@@ -6,15 +6,17 @@ import Navbar from '../components/Navbar'
 import './all.scss'
 
 const TemplateWrapper = ({ children }) => (
-  <div>
-    <Helmet title="Nyentek Blogger" />
-    <Navbar />
-    <div>{children()}</div>
-  </div>
+	<div>
+		<Helmet title="Nyentek Blogger">
+			<link rel="stylesheet" href="http://nyentek.com/styles.css"/>
+		</Helmet>
+		<Navbar/>
+		<div>{children()}</div>
+	</div>
 )
 
 TemplateWrapper.propTypes = {
-  children: PropTypes.func,
+	children: PropTypes.func
 }
 
 export default TemplateWrapper
