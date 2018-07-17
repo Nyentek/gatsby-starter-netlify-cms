@@ -75,6 +75,7 @@ export const pageQuery = graphql`
           frontmatter {
             title
             templateKey
+            postimage
             date(formatString: "MMMM DD, YYYY")
           }
         }
