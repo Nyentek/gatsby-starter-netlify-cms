@@ -5,9 +5,11 @@ import Link from 'gatsby-link'
 export default class IndexPage extends React.Component {
 	render () {
 		const { data } = this.props
+		const { allFile } = data
 		const { edges: posts } = data.allMarkdownRemark
-
-		console.log(posts)
+		let imagesArray = []
+		allFile.edges.map(({ node: file }) => imagesArray.push(file))
+		console.log(allFile)
 
 		return (
 			<section>
@@ -77,6 +79,19 @@ export const pageQuery = graphql`
             templateKey
             postimage
             date(formatString: "MMMM DD, YYYY")
+          }
+        }
+      }
+    }
+    allFile(filter: { absolutePath: { regex: "/img/" } }) {
+      edges {
+        node {
+          absolutePath
+          relativePath
+          childImageSharp {
+            sizes(maxWidth: 630) {
+              ...GatsbyImageSharpSizes
+            }
           }
         }
       }
