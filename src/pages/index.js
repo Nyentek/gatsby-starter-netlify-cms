@@ -1,8 +1,27 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import Link from 'gatsby-link'
+import Img from 'gatsby-image'
 
 export default class IndexPage extends React.Component {
+
+	renderPostImage (path, imagesArray) {
+		console.log('renderPostImage')
+		let comparePath = path.split('/img/')
+		comparePath = comparePath.length == 2 ? comparePath[1] : ''
+		return imagesArray
+			.filter(
+				item =>
+					item.relativePath === comparePath
+			)
+			.map(
+				(item, i) => {
+					console.log(item)
+					return <Img className="preview-image" key={i} sizes={item.childImageSharp.sizes}/>
+				}
+			)
+	}
+
 	render () {
 		const { data } = this.props
 		const { allFile } = data
@@ -10,6 +29,7 @@ export default class IndexPage extends React.Component {
 		let imagesArray = []
 		allFile.edges.map(({ node: file }) => imagesArray.push(file))
 		console.log(allFile)
+		console.log(posts)
 
 		return (
 			<section>
@@ -37,6 +57,7 @@ export default class IndexPage extends React.Component {
 									<span> &bull; </span>
 									<small>{post.frontmatter.date}</small>
 								</p>
+								{this.renderPostImage(post.frontmatter.postimage, imagesArray)}
 								<p>
 									{post.excerpt}
 									<br/>
